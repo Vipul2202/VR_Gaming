@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-
+import { ReactTyped } from "react-typed";
 import Protobacillus from "../assets/Protobacillus.gif";
 import abc from "../assets/abc.gif";
 
@@ -62,23 +62,25 @@ const Hero = () => {
         <h1 className='md:text-7xl sm:text-6xl text-4xl font-bold md:py-6 text-clip rounded-xl fade-in-up font-serif'>
           Enter the Virtual World
         </h1>
-        <div className='flex justify-center items-center bg-gradient-to-b from-green-500 to-yellow-400 text-transparent bg-clip-text fade-in-up'>
+        <div className='flex justify-center items-center bg-gradient-to-b from-green-500 to-yellow-400 text-transparent bg-clip-text fade-in-up flex-col'>
 
           
           <p className='md:text-5xl sm:text-4xl text-xl font-bold py-4'>
           Beyond Screens: 
           </p>
-       
-            {/* <div className='md:text-5xl sm:text-4xl text-xl font-bold md:pl-4 pl-2'>
+          <ReactTyped
+            className='md:text-5xl sm:text-4xl text-xl font-bold md:pl-4 pl-2 text-green-500' // Added a class 'typed-container'
             strings={['VR', 'Gaming', 'Adventure']}
             typeSpeed={120}
-            backSpeed={140}
-
+            backSpeed={190}
+            attr="placeholder"
             loop
-            </div> */}
+          >
+            <input className='rounded-lg bg-transparent text-green-700' type="text" />
+          </ReactTyped>
         </div>
         <div className='flex justify-center fade-in-up py-24'>
-          <button onClick={handleScrollClick}   className='  bg-gradient-to-r from-yellow-600 to-red-400 hover:text-white hover:font-bold w-[200px] px-4 font-bold text-black md:py-2  md:px-6 rounded-md transition duration-300 hover:bg-gradient-to-r hover:from-yellow-600 hover:to-red-400 hover:text-white hover:font-bold w-[200px] '>Get Started</button>
+          <button onClick={handleScrollClick} className='bg-gradient-to-r from-yellow-600 to-red-400 hover:text-white hover:font-bold w-[200px] px-4 font-bold text-black md:py-2 md:px-6 rounded-md transition duration-300 hover:bg-gradient-to-r hover:from-yellow-600 hover:to-red-400 hover:text-white hover:font-bold w-[200px]'>Get Started</button>
         </div>
       </div>
     </div>

@@ -13,3 +13,7 @@
     animation-name: fadeInUp;
     animation-duration: 5s;
   }
+  /* Add this CSS to your Hero.css file */
+.typed-container {
+  background-color: transparent !important;
+}
