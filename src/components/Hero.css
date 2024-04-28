@@ -1,0 +1,15 @@
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(70px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(10);
+    }
+  }
+  
+  .fadeInUp {
+    animation-name: fadeInUp;
+    animation-duration: 5s;
+  }
