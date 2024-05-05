@@ -131,7 +131,7 @@ const ContactUs = () => {
                   htmlFor="topic"
                   className="block text-md font-medium text-white "
                 >
-                  Email
+                  Subject
                 </label>
                 <input
                   type="text"
@@ -153,7 +153,7 @@ const ContactUs = () => {
                     htmlFor="email"
                     className="block text-md font-medium text-white "
                   >
-                    Subject
+                    Email
                   </label>
                   <input
                     type="email"
